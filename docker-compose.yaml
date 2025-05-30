@@ -1,13 +1,6 @@
 services:
   market-place:
     image: market-place:latest
-    build:
-      context: .
-      args:
-        DOCKER_BUILDKIT: 1
-    restart: "no"
-    ports:
-      - "8080:8080"
     environment:
       SPRING_MAIL_HOST: smtp.mail.ru
       SPRING_MAIL_PORT: 587
@@ -22,5 +15,5 @@ services:
   mailhog:
     image: mailhog/mailhog:latest
     ports:
-      - "1025:1025"  # Порт для отправки писем
-      - "8025:8025"  # Веб-интерфейс Mailhog
+      - "1025:1025"
+      - "8025:8025"
