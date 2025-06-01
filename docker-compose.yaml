@@ -33,7 +33,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Moscow
-      - URL=4894777-zw28304.twc1.net
+      - URL=4917561-zw28304.twc1.net
       - EMAIL=oleg_novak_98@mail.ru
       - WEBROOT=/certbot
       - NGINX_CONTAINER=nginx
